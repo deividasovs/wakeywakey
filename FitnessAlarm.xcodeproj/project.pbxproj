@@ -1,0 +1,966 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F0CD2AC2CFB7C73007BEBCD /* FitnessAlarm Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3F0CD2AB2CFB7C73007BEBCD /* FitnessAlarm Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F0CD2962CFB7C73007BEBCD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F0CD27D2CFB7C70007BEBCD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F0CD2842CFB7C70007BEBCD;
+			remoteInfo = FitnessAlarm;
+		};
+		3F0CD2A02CFB7C73007BEBCD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F0CD27D2CFB7C70007BEBCD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F0CD2842CFB7C70007BEBCD;
+			remoteInfo = FitnessAlarm;
+		};
+		3F0CD2AD2CFB7C73007BEBCD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F0CD27D2CFB7C70007BEBCD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F0CD2AA2CFB7C73007BEBCD;
+			remoteInfo = "FitnessAlarm Watch App";
+		};
+		3F0CD2BE2CFB7C74007BEBCD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F0CD27D2CFB7C70007BEBCD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F0CD2AA2CFB7C73007BEBCD;
+			remoteInfo = "FitnessAlarm Watch App";
+		};
+		3F0CD2C82CFB7C74007BEBCD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F0CD27D2CFB7C70007BEBCD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F0CD2AA2CFB7C73007BEBCD;
+			remoteInfo = "FitnessAlarm Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3F0CD2D42CFB7C74007BEBCD /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				3F0CD2AC2CFB7C73007BEBCD /* FitnessAlarm Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3F0CD2852CFB7C70007BEBCD /* FitnessAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F0CD2952CFB7C73007BEBCD /* FitnessAlarmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitnessAlarmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F0CD29F2CFB7C73007BEBCD /* FitnessAlarmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitnessAlarmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F0CD2AB2CFB7C73007BEBCD /* FitnessAlarm Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FitnessAlarm Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F0CD2BD2CFB7C74007BEBCD /* FitnessAlarm Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FitnessAlarm Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F0CD2C72CFB7C74007BEBCD /* FitnessAlarm Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FitnessAlarm Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3F0CD2872CFB7C70007BEBCD /* FitnessAlarm */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FitnessAlarm;
+			sourceTree = "<group>";
+		};
+		3F0CD2982CFB7C73007BEBCD /* FitnessAlarmTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FitnessAlarmTests;
+			sourceTree = "<group>";
+		};
+		3F0CD2A22CFB7C73007BEBCD /* FitnessAlarmUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FitnessAlarmUITests;
+			sourceTree = "<group>";
+		};
+		3F0CD2AF2CFB7C73007BEBCD /* FitnessAlarm Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "FitnessAlarm Watch App";
+			sourceTree = "<group>";
+		};
+		3F0CD2C02CFB7C74007BEBCD /* FitnessAlarm Watch AppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "FitnessAlarm Watch AppTests";
+			sourceTree = "<group>";
+		};
+		3F0CD2CA2CFB7C74007BEBCD /* FitnessAlarm Watch AppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "FitnessAlarm Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F0CD2822CFB7C70007BEBCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F0CD2922CFB7C73007BEBCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F0CD29C2CFB7C73007BEBCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F0CD2A82CFB7C73007BEBCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F0CD2BA2CFB7C74007BEBCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F0CD2C42CFB7C74007BEBCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F0CD27C2CFB7C70007BEBCD = {
+			isa = PBXGroup;
+			children = (
+				3F0CD2872CFB7C70007BEBCD /* FitnessAlarm */,
+				3F0CD2982CFB7C73007BEBCD /* FitnessAlarmTests */,
+				3F0CD2A22CFB7C73007BEBCD /* FitnessAlarmUITests */,
+				3F0CD2AF2CFB7C73007BEBCD /* FitnessAlarm Watch App */,
+				3F0CD2C02CFB7C74007BEBCD /* FitnessAlarm Watch AppTests */,
+				3F0CD2CA2CFB7C74007BEBCD /* FitnessAlarm Watch AppUITests */,
+				3F0CD2862CFB7C70007BEBCD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F0CD2862CFB7C70007BEBCD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F0CD2852CFB7C70007BEBCD /* FitnessAlarm.app */,
+				3F0CD2952CFB7C73007BEBCD /* FitnessAlarmTests.xctest */,
+				3F0CD29F2CFB7C73007BEBCD /* FitnessAlarmUITests.xctest */,
+				3F0CD2AB2CFB7C73007BEBCD /* FitnessAlarm Watch App.app */,
+				3F0CD2BD2CFB7C74007BEBCD /* FitnessAlarm Watch AppTests.xctest */,
+				3F0CD2C72CFB7C74007BEBCD /* FitnessAlarm Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F0CD2842CFB7C70007BEBCD /* FitnessAlarm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F0CD2D52CFB7C74007BEBCD /* Build configuration list for PBXNativeTarget "FitnessAlarm" */;
+			buildPhases = (
+				3F0CD2812CFB7C70007BEBCD /* Sources */,
+				3F0CD2822CFB7C70007BEBCD /* Frameworks */,
+				3F0CD2832CFB7C70007BEBCD /* Resources */,
+				3F0CD2D42CFB7C74007BEBCD /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F0CD2AE2CFB7C73007BEBCD /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				3F0CD2872CFB7C70007BEBCD /* FitnessAlarm */,
+			);
+			name = FitnessAlarm;
+			packageProductDependencies = (
+			);
+			productName = FitnessAlarm;
+			productReference = 3F0CD2852CFB7C70007BEBCD /* FitnessAlarm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F0CD2942CFB7C73007BEBCD /* FitnessAlarmTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F0CD2D82CFB7C74007BEBCD /* Build configuration list for PBXNativeTarget "FitnessAlarmTests" */;
+			buildPhases = (
+				3F0CD2912CFB7C73007BEBCD /* Sources */,
+				3F0CD2922CFB7C73007BEBCD /* Frameworks */,
+				3F0CD2932CFB7C73007BEBCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F0CD2972CFB7C73007BEBCD /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				3F0CD2982CFB7C73007BEBCD /* FitnessAlarmTests */,
+			);
+			name = FitnessAlarmTests;
+			packageProductDependencies = (
+			);
+			productName = FitnessAlarmTests;
+			productReference = 3F0CD2952CFB7C73007BEBCD /* FitnessAlarmTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3F0CD29E2CFB7C73007BEBCD /* FitnessAlarmUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F0CD2DB2CFB7C74007BEBCD /* Build configuration list for PBXNativeTarget "FitnessAlarmUITests" */;
+			buildPhases = (
+				3F0CD29B2CFB7C73007BEBCD /* Sources */,
+				3F0CD29C2CFB7C73007BEBCD /* Frameworks */,
+				3F0CD29D2CFB7C73007BEBCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F0CD2A12CFB7C73007BEBCD /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				3F0CD2A22CFB7C73007BEBCD /* FitnessAlarmUITests */,
+			);
+			name = FitnessAlarmUITests;
+			packageProductDependencies = (
+			);
+			productName = FitnessAlarmUITests;
+			productReference = 3F0CD29F2CFB7C73007BEBCD /* FitnessAlarmUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		3F0CD2AA2CFB7C73007BEBCD /* FitnessAlarm Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F0CD2D12CFB7C74007BEBCD /* Build configuration list for PBXNativeTarget "FitnessAlarm Watch App" */;
+			buildPhases = (
+				3F0CD2A72CFB7C73007BEBCD /* Sources */,
+				3F0CD2A82CFB7C73007BEBCD /* Frameworks */,
+				3F0CD2A92CFB7C73007BEBCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3F0CD2AF2CFB7C73007BEBCD /* FitnessAlarm Watch App */,
+			);
+			name = "FitnessAlarm Watch App";
+			packageProductDependencies = (
+			);
+			productName = "FitnessAlarm Watch App";
+			productReference = 3F0CD2AB2CFB7C73007BEBCD /* FitnessAlarm Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F0CD2BC2CFB7C74007BEBCD /* FitnessAlarm Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F0CD2DE2CFB7C74007BEBCD /* Build configuration list for PBXNativeTarget "FitnessAlarm Watch AppTests" */;
+			buildPhases = (
+				3F0CD2B92CFB7C74007BEBCD /* Sources */,
+				3F0CD2BA2CFB7C74007BEBCD /* Frameworks */,
+				3F0CD2BB2CFB7C74007BEBCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F0CD2BF2CFB7C74007BEBCD /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				3F0CD2C02CFB7C74007BEBCD /* FitnessAlarm Watch AppTests */,
+			);
+			name = "FitnessAlarm Watch AppTests";
+			packageProductDependencies = (
+			);
+			productName = "FitnessAlarm Watch AppTests";
+			productReference = 3F0CD2BD2CFB7C74007BEBCD /* FitnessAlarm Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3F0CD2C62CFB7C74007BEBCD /* FitnessAlarm Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F0CD2E12CFB7C74007BEBCD /* Build configuration list for PBXNativeTarget "FitnessAlarm Watch AppUITests" */;
+			buildPhases = (
+				3F0CD2C32CFB7C74007BEBCD /* Sources */,
+				3F0CD2C42CFB7C74007BEBCD /* Frameworks */,
+				3F0CD2C52CFB7C74007BEBCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F0CD2C92CFB7C74007BEBCD /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				3F0CD2CA2CFB7C74007BEBCD /* FitnessAlarm Watch AppUITests */,
+			);
+			name = "FitnessAlarm Watch AppUITests";
+			packageProductDependencies = (
+			);
+			productName = "FitnessAlarm Watch AppUITests";
+			productReference = 3F0CD2C72CFB7C74007BEBCD /* FitnessAlarm Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F0CD27D2CFB7C70007BEBCD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					3F0CD2842CFB7C70007BEBCD = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					3F0CD2942CFB7C73007BEBCD = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 3F0CD2842CFB7C70007BEBCD;
+					};
+					3F0CD29E2CFB7C73007BEBCD = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 3F0CD2842CFB7C70007BEBCD;
+					};
+					3F0CD2AA2CFB7C73007BEBCD = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					3F0CD2BC2CFB7C74007BEBCD = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 3F0CD2AA2CFB7C73007BEBCD;
+					};
+					3F0CD2C62CFB7C74007BEBCD = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 3F0CD2AA2CFB7C73007BEBCD;
+					};
+				};
+			};
+			buildConfigurationList = 3F0CD2802CFB7C70007BEBCD /* Build configuration list for PBXProject "FitnessAlarm" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F0CD27C2CFB7C70007BEBCD;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3F0CD2862CFB7C70007BEBCD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F0CD2842CFB7C70007BEBCD /* FitnessAlarm */,
+				3F0CD2942CFB7C73007BEBCD /* FitnessAlarmTests */,
+				3F0CD29E2CFB7C73007BEBCD /* FitnessAlarmUITests */,
+				3F0CD2AA2CFB7C73007BEBCD /* FitnessAlarm Watch App */,
+				3F0CD2BC2CFB7C74007BEBCD /* FitnessAlarm Watch AppTests */,
+				3F0CD2C62CFB7C74007BEBCD /* FitnessAlarm Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F0CD2832CFB7C70007BEBCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F0CD2932CFB7C73007BEBCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F0CD29D2CFB7C73007BEBCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F0CD2A92CFB7C73007BEBCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F0CD2BB2CFB7C74007BEBCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F0CD2C52CFB7C74007BEBCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F0CD2812CFB7C70007BEBCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F0CD2912CFB7C73007BEBCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F0CD29B2CFB7C73007BEBCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F0CD2A72CFB7C73007BEBCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F0CD2B92CFB7C74007BEBCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F0CD2C32CFB7C74007BEBCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F0CD2972CFB7C73007BEBCD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F0CD2842CFB7C70007BEBCD /* FitnessAlarm */;
+			targetProxy = 3F0CD2962CFB7C73007BEBCD /* PBXContainerItemProxy */;
+		};
+		3F0CD2A12CFB7C73007BEBCD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F0CD2842CFB7C70007BEBCD /* FitnessAlarm */;
+			targetProxy = 3F0CD2A02CFB7C73007BEBCD /* PBXContainerItemProxy */;
+		};
+		3F0CD2AE2CFB7C73007BEBCD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F0CD2AA2CFB7C73007BEBCD /* FitnessAlarm Watch App */;
+			targetProxy = 3F0CD2AD2CFB7C73007BEBCD /* PBXContainerItemProxy */;
+		};
+		3F0CD2BF2CFB7C74007BEBCD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F0CD2AA2CFB7C73007BEBCD /* FitnessAlarm Watch App */;
+			targetProxy = 3F0CD2BE2CFB7C74007BEBCD /* PBXContainerItemProxy */;
+		};
+		3F0CD2C92CFB7C74007BEBCD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F0CD2AA2CFB7C73007BEBCD /* FitnessAlarm Watch App */;
+			targetProxy = 3F0CD2C82CFB7C74007BEBCD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3F0CD2CF2CFB7C74007BEBCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3F0CD2D02CFB7C74007BEBCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		3F0CD2D22CFB7C74007BEBCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FitnessAlarm Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 5NM22JY3YW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FitnessAlarm;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = FitnessAlarm.FitnessAlarm;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FitnessAlarm.FitnessAlarm.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.1;
+			};
+			name = Debug;
+		};
+		3F0CD2D32CFB7C74007BEBCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FitnessAlarm Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 5NM22JY3YW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FitnessAlarm;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = FitnessAlarm.FitnessAlarm;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FitnessAlarm.FitnessAlarm.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.1;
+			};
+			name = Release;
+		};
+		3F0CD2D62CFB7C74007BEBCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FitnessAlarm/Preview Content\"";
+				DEVELOPMENT_TEAM = 5NM22JY3YW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FitnessAlarm;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FitnessAlarm.FitnessAlarm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F0CD2D72CFB7C74007BEBCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FitnessAlarm/Preview Content\"";
+				DEVELOPMENT_TEAM = 5NM22JY3YW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FitnessAlarm;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FitnessAlarm.FitnessAlarm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F0CD2D92CFB7C74007BEBCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5NM22JY3YW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FitnessAlarm.FitnessAlarmTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FitnessAlarm.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FitnessAlarm";
+			};
+			name = Debug;
+		};
+		3F0CD2DA2CFB7C74007BEBCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5NM22JY3YW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FitnessAlarm.FitnessAlarmTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FitnessAlarm.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FitnessAlarm";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F0CD2DC2CFB7C74007BEBCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5NM22JY3YW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FitnessAlarm.FitnessAlarmUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FitnessAlarm;
+			};
+			name = Debug;
+		};
+		3F0CD2DD2CFB7C74007BEBCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5NM22JY3YW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FitnessAlarm.FitnessAlarmUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FitnessAlarm;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F0CD2DF2CFB7C74007BEBCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5NM22JY3YW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "FitnessAlarm.FitnessAlarm-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FitnessAlarm Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FitnessAlarm Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.1;
+			};
+			name = Debug;
+		};
+		3F0CD2E02CFB7C74007BEBCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5NM22JY3YW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "FitnessAlarm.FitnessAlarm-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FitnessAlarm Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FitnessAlarm Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.1;
+			};
+			name = Release;
+		};
+		3F0CD2E22CFB7C74007BEBCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5NM22JY3YW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "FitnessAlarm.FitnessAlarm-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "FitnessAlarm Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.1;
+			};
+			name = Debug;
+		};
+		3F0CD2E32CFB7C74007BEBCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5NM22JY3YW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "FitnessAlarm.FitnessAlarm-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "FitnessAlarm Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F0CD2802CFB7C70007BEBCD /* Build configuration list for PBXProject "FitnessAlarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F0CD2CF2CFB7C74007BEBCD /* Debug */,
+				3F0CD2D02CFB7C74007BEBCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F0CD2D12CFB7C74007BEBCD /* Build configuration list for PBXNativeTarget "FitnessAlarm Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F0CD2D22CFB7C74007BEBCD /* Debug */,
+				3F0CD2D32CFB7C74007BEBCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F0CD2D52CFB7C74007BEBCD /* Build configuration list for PBXNativeTarget "FitnessAlarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F0CD2D62CFB7C74007BEBCD /* Debug */,
+				3F0CD2D72CFB7C74007BEBCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F0CD2D82CFB7C74007BEBCD /* Build configuration list for PBXNativeTarget "FitnessAlarmTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F0CD2D92CFB7C74007BEBCD /* Debug */,
+				3F0CD2DA2CFB7C74007BEBCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F0CD2DB2CFB7C74007BEBCD /* Build configuration list for PBXNativeTarget "FitnessAlarmUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F0CD2DC2CFB7C74007BEBCD /* Debug */,
+				3F0CD2DD2CFB7C74007BEBCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F0CD2DE2CFB7C74007BEBCD /* Build configuration list for PBXNativeTarget "FitnessAlarm Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F0CD2DF2CFB7C74007BEBCD /* Debug */,
+				3F0CD2E02CFB7C74007BEBCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F0CD2E12CFB7C74007BEBCD /* Build configuration list for PBXNativeTarget "FitnessAlarm Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F0CD2E22CFB7C74007BEBCD /* Debug */,
+				3F0CD2E32CFB7C74007BEBCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F0CD27D2CFB7C70007BEBCD /* Project object */;
+}
