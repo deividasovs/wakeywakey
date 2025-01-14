@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import HealthKit
 
 struct ContentView: View {
     var body: some View {
@@ -13,10 +14,21 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Logged in!")
+            Text("Tap to vibrate")
+                .fontWeight(.thin)
+                .padding()
+                .onTapGesture {
+                       triggerHaptic()
+               }
         }
         .padding()
     }
+    
+    func triggerHaptic() {
+          WKInterfaceDevice.current().play(.success)
+      }
+    
 }
 
 #Preview {
