@@ -38,6 +38,13 @@ class WatchConnectivityManager: NSObject, ObservableObject, WCSessionDelegate {
                     ContentView2().titleMessage = "Some new text!"
                   }
         }
+        
+        if let action = message["action"] as? String, action == "alarmButtonPressed" {
+            print("Message received: wow the alarm button was pressed on Phone!!")
+            DispatchQueue.main.async {
+                    ContentView2().titleMessage = "alarm button!!" // changing text not working properly..
+                  }
+        }
     }
 
     func sendMessageToPhone() {
