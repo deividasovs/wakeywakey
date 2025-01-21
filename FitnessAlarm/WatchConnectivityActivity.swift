@@ -20,7 +20,6 @@ class ConnectivityManager: NSObject, ObservableObject, WCSessionDelegate {
     override init() {
         super.init()
         if WCSession.isSupported() {
-            print("Activating wc from Phone...")
             WCSession.default.delegate = self
             WCSession.default.activate()
         }
@@ -32,6 +31,20 @@ class ConnectivityManager: NSObject, ObservableObject, WCSessionDelegate {
                     ContentView().labelText = "Some new text!"
                   }
         }
+    }
+    
+    func sendAlarmMessageToWatch() {
+        print("Telling Apple Watch to alarm!")
+        
+        
+        ///TODO: Move on from here
+        if WCSession.default.isReachable {
+            let message = ["action": "alarmButtonPressed"]
+            WCSession.default.sendMessage(message, replyHandler: nil) { error in
+                print("Failed to send message: \(error.localizedDescription)")
+            }
+        }
+        
     }
 
     func session(
