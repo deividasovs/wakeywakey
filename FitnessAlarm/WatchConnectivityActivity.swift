@@ -52,18 +52,47 @@ class ConnectivityManager: NSObject, ObservableObject, WCSessionDelegate {
 
 struct ContentView: View {
     @EnvironmentObject var connectivityManager: ConnectivityManager
-    @State public var labelText = "Message from watch"
-
+    @State public var labelText = "[Message from watch]"
+    @State private var selectedTime = Date()
+    @State private var isAlarmSet = false
+    
     
     var body: some View {
         VStack {
-            Text(labelText)
-                .font(.largeTitle)
+            Text("Select Alarm")
+                .font(.headline)
                 .padding()
+            
+            DatePicker("Select Time", selection: $selectedTime, displayedComponents: .hourAndMinute)
+                .datePickerStyle(WheelDatePickerStyle())
+                .labelsHidden()
+                .padding()
+            
+            if isAlarmSet {
+                Text("Alarm set for \(formattedTime)")
+                    .font(.headline)
+                    .foregroundColor(.green)
+                    .padding()
+            }
+            
+           Button(action: {
+               isAlarmSet = true
+               AlarmManager.shared.scheduleAlarm(for: selectedTime)
+           }) {
+               Text("Set Alarm")
+                   .fontWeight(.bold)
+                   .foregroundColor(.white)
+                   .frame(maxWidth: .infinity)
+                   .padding()
+                   .background(Color.blue)
+                   .cornerRadius(10)
+           }
+           .padding(.horizontal)
+           .padding()
+    
             
             Button("Send Test Message to Watch") {
                 labelText = "sending to watch"
-                // Example message sending (would be from Watch to iPhone in your real case)
                 if WCSession.default.isReachable {
                     let message = ["action": "buttonPressed"]
                     WCSession.default.sendMessage(message, replyHandler: nil) { error in
@@ -71,14 +100,27 @@ struct ContentView: View {
                     }
                 }
             }
+            Text(labelText)
+                .font(.subheadline)
+                .padding()
+            
             .padding()
         }
         .onAppear {
+            AlarmManager.shared.requestNotificationPermissions()
+            
             // Check if WCSession is activated
             if WCSession.default.activationState != .activated {
                 print("WCSession is not activated yet.")
             }
         }
+    }
+    
+    
+    private var formattedTime: String {
+        let formatter = DateFormatter()
+        formatter.timeStyle = .short
+        return formatter.string(from: selectedTime)
     }
 }
 

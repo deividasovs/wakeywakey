@@ -1,7 +1,11 @@
 import SwiftUI
 import WatchConnectivity
 
+<<<<<<< Updated upstream
 // @main
+=======
+//@main
+>>>>>>> Stashed changes
 struct WatchApp: App {
     @StateObject private var connectivityManager = WatchConnectivityManager()
     
@@ -70,6 +74,6 @@ struct ContentView2: View {
 }
 
 #Preview {
-    ContentView()
-        .environmentObject(WatchConnectivityManager())
+    //ContentView()
+     //   .environmentObject(WatchConnectivityManager())
 }
