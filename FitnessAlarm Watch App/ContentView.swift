@@ -2,15 +2,23 @@ import SwiftUI
 import HealthKit
 import AVFoundation
 
+import Foundation
+import Combine
+import HealthKit
+import AVFoundation
+import WatchKit
+
 class HeartRateManager: ObservableObject {
     private let healthStore = HKHealthStore()
     private var heartRateQuery: HKAnchoredObjectQuery?
     @Published var heartRate: Int = 0
     @Published var alarmActive: Bool = false
+    @Published var alarmTime: Date? // Time to trigger the alarm
 
     private var heartRateBuffer: [Double] = []
     private let bufferSize = 5
     private var audioPlayer: AVAudioPlayer?
+    private var timer: AnyCancellable?
 
     func requestHealthKitPermissions() {
         guard HKHealthStore.isHealthDataAvailable() else {
@@ -28,6 +36,37 @@ class HeartRateManager: ObservableObject {
         }
     }
 
+    func setAlarmTime(_ time: Date) {
+        alarmTime = time
+        startAlarmTimer()
+    }
+
+    private func startAlarmTimer() {
+        // Cancel any existing timer
+        timer?.cancel()
+
+        // Start a new timer that checks every second
+        timer = Timer.publish(every: 1.0, on: .main, in: .common)
+            .autoconnect()
+            .sink { [weak self] currentTime in
+                guard let self = self, let alarmTime = self.alarmTime else { return }
+
+                let calendar = Calendar.current
+                if calendar.isDate(currentTime, equalTo: alarmTime, toGranularity: .minute) {
+                    self.triggerAlarm()
+                    self.timer?.cancel() // Stop the timer after triggering the alarm
+                }
+            }
+    }
+
+    private func triggerAlarm() {
+        alarmActive = true
+        playAlarmSound()
+        triggerHapticFeedback()
+        print("Alarm triggered at the set time!")
+    }
+
+    // MARK: - Heart Rate Monitoring
     func startHeartRateMonitoring() {
         let heartRateType = HKObjectType.quantityType(forIdentifier: .heartRate)!
         heartRateQuery = HKAnchoredObjectQuery(
@@ -49,9 +88,6 @@ class HeartRateManager: ObservableObject {
         } else {
             print("Failed to create heart rate query.")
         }
-
-        // Start alarm sound immediately when monitoring begins
-        playAlarmSound()
     }
 
     func stopHeartRateMonitoring() {
@@ -60,24 +96,7 @@ class HeartRateManager: ObservableObject {
         }
         heartRateQuery = nil
         alarmActive = false
-
-        // Stop alarm sound and haptic feedback
         stopAlarmSoundAndHaptics()
-    }
-
-    
-    func testPlaySound() {
-        guard let soundURL = Bundle.main.url(forResource: "alarm_sound", withExtension: "mp3") else {
-            print("Alarm sound file not found.")
-            return
-        }
-        do {
-            audioPlayer = try AVAudioPlayer(contentsOf: soundURL)
-            audioPlayer?.play()
-            print("Playing sound...")
-        } catch {
-            print("Failed to play sound: \(error.localizedDescription)")
-        }
     }
 
     private func processHeartRateSamples(_ samples: [HKSample]?) {
@@ -114,12 +133,7 @@ class HeartRateManager: ObservableObject {
         }
     }
 
-    private func triggerAlarm() {
-        playAlarmSound()
-        triggerHapticFeedback()
-        print("Alarm is triggered!")
-    }
-
+    // MARK: - Alarm Sound
     private func playAlarmSound() {
         guard let soundURL = Bundle.main.url(forResource: "alarm_sound", withExtension: "mp3") else {
             print("Alarm sound file not found.")
@@ -138,23 +152,44 @@ class HeartRateManager: ObservableObject {
         audioPlayer?.stop()
     }
 
+    // MARK: - Haptic Feedback
     private func triggerHapticFeedback() {
         WKInterfaceDevice.current().play(.notification)
         print("Haptic feedback triggered.")
     }
 }
 
+
 struct ContentView: View {
     @StateObject private var heartRateManager = HeartRateManager()
+    @State private var selectedTime = Date() // Time selected by the user
 
     var body: some View {
         VStack {
-            // Heart rate display with smaller font and dynamic resizing
+            // Heart rate display
             Text("Heart Rate: \(heartRateManager.heartRate) bpm")
-                .font(.system(size: 24)) // Smaller font size
-                .minimumScaleFactor(0.5) // Allows the text to scale down if needed
-                .lineLimit(1) // Ensures the text stays on one line
+                .font(.title)
                 .padding()
+
+            // Time picker for setting the alarm
+            if #available(watchOS 10.0, *) {
+                DatePicker("Set Alarm Time", selection: $selectedTime, displayedComponents: .hourAndMinute)
+                    .labelsHidden()
+                    .datePickerStyle(WheelDatePickerStyle())
+                    .padding()
+            } else {
+                // Fallback on earlier versions
+            }
+
+            Button("Set Alarm Time") {
+                heartRateManager.setAlarmTime(selectedTime)
+                print("Alarm set for: \(selectedTime)")
+            }
+            .font(.headline)
+            .padding()
+            .background(Color.blue)
+            .foregroundColor(.white)
+            .cornerRadius(10)
 
             // Alarm button
             Button(heartRateManager.alarmActive ? "Stop Alarm" : "Start Alarm") {
@@ -170,15 +205,10 @@ struct ContentView: View {
             .background(heartRateManager.alarmActive ? Color.red : Color.green)
             .foregroundColor(.white)
             .cornerRadius(10)
-            
-            Button("Test Haptics") {
-                WKInterfaceDevice.current().play(.notification)
-            }
 
-            // Alarm state description
             if heartRateManager.alarmActive {
-                Text("Alarm is active. Waiting for heart rate to reach 150 bpm...")
-                    .font(.caption) // Smaller font size for the description
+                Text("Alarm is active. Waiting for heart rate to reach 150 bpm or set time...")
+                    .font(.caption)
                     .padding()
             }
         }
