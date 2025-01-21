@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>NSHealthShareUsageDescription</key>
+    <string>We need access to your heart rate data to turn off the alarm when your heart rate reaches 100 bpm.</string>
+    <key>NSHealthUpdateUsageDescription</key>
+    <string>This app writes heart rate data to monitor your fitness progress.</string>
+</dict>
+</plist>
+
