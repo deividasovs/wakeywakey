@@ -1,7 +1,7 @@
 import SwiftUI
 import WatchConnectivity
 
-@main
+// @main
 struct WatchApp: App {
     @StateObject private var connectivityManager = WatchConnectivityManager()
     
@@ -36,7 +36,7 @@ class WatchConnectivityManager: NSObject, ObservableObject, WCSessionDelegate {
         if let action = message["action"] as? String, action == "buttonPressed" {
             print("Message received: The button was pressed on Phone")
             DispatchQueue.main.async {
-                    ContentView().titleMessage = "Some new text!"
+                    ContentView2().titleMessage = "Some new text!"
                   }
         }
     }
@@ -53,7 +53,7 @@ class WatchConnectivityManager: NSObject, ObservableObject, WCSessionDelegate {
     }
 }
 
-struct ContentView: View {
+struct ContentView2: View {
     @EnvironmentObject var connectivityManager: WatchConnectivityManager
     @State public var titleMessage: String = "Hello"
     
