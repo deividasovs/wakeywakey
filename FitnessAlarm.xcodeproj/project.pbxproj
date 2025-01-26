@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3F0CD2AC2CFB7C73007BEBCD /* FitnessAlarm Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3F0CD2AB2CFB7C73007BEBCD /* FitnessAlarm Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3F4315842D45B9B900EC112E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3F4315832D45B9B900EC112E /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		3F0CD2AB2CFB7C73007BEBCD /* FitnessAlarm Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FitnessAlarm Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F0CD2BD2CFB7C74007BEBCD /* FitnessAlarm Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FitnessAlarm Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F0CD2C72CFB7C74007BEBCD /* FitnessAlarm Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FitnessAlarm Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F4315832D45B9B900EC112E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -173,6 +175,7 @@
 				3F0CD2C02CFB7C74007BEBCD /* FitnessAlarm Watch AppTests */,
 				3F0CD2CA2CFB7C74007BEBCD /* FitnessAlarm Watch AppUITests */,
 				3F0CD2862CFB7C70007BEBCD /* Products */,
+				3F4315832D45B9B900EC112E /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -414,6 +417,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F4315842D45B9B900EC112E /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

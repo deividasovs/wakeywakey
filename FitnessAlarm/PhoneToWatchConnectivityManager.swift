@@ -43,7 +43,6 @@ class PhoneToWatchConnectivityManager: NSObject, ObservableObject, WCSessionDele
     func sendAlarmMessageToWatch() {
         print("Telling Apple Watch to alarm!")
         
-        
         ///TODO: Move on from here
         if WCSession.default.isReachable {
             let message = ["action": "alarmButtonPressed"]
@@ -73,6 +72,7 @@ struct ContentView: View {
     @EnvironmentObject var connectivityManager: PhoneToWatchConnectivityManager
     @State public var labelText = "[Message from watch]"
     @State private var selectedTime = Date()
+    @State private var bpmToReach: Int = 50 ///state values don't work that well in xcode?
     @State private var isAlarmSet = false
     
     
@@ -86,6 +86,18 @@ struct ContentView: View {
                 .datePickerStyle(WheelDatePickerStyle())
                 .labelsHidden()
                 .padding()
+            
+            Text("Set your BPM")
+                .font(.subheadline)
+                .foregroundColor(.black)
+                .padding()
+            
+            TextField("Bpm to reach", value: $bpmToReach, format: .number)
+                     .textFieldStyle(.roundedBorder)
+                     .onChange(of: bpmToReach, { oldValue, newValue in
+                         bpmToReach = newValue
+                     })
+                     .padding()
             
             if isAlarmSet {
                 Text("Alarm set for \(formattedTime)")
@@ -105,6 +117,7 @@ struct ContentView: View {
                    .padding()
                    .background(Color.blue)
                    .cornerRadius(10)
+               
            }
            .padding(.horizontal)
            .padding()
@@ -118,7 +131,10 @@ struct ContentView: View {
                         print("Failed to send message: \(error.localizedDescription)")
                     }
                 }
+                
+                
             }
+            
             Text(labelText)
                 .font(.subheadline)
                 .padding()
