@@ -2,7 +2,7 @@ import SwiftUI
 import WatchConnectivity
 
 struct WatchApp: App {
-    @StateObject private var connectivityManager = WatchConnectivityManager()
+    @StateObject private var connectivityManager = WatchToPhoneConnectivityManager()
     
     var body: some Scene {
         WindowGroup {
@@ -12,7 +12,9 @@ struct WatchApp: App {
     }
 }
 
-class WatchConnectivityManager: NSObject, ObservableObject, WCSessionDelegate {
+class WatchToPhoneConnectivityManager: NSObject, ObservableObject, WCSessionDelegate {
+    static let shared = WatchToPhoneConnectivityManager()
+
     override init() {
         super.init()
         if WCSession.isSupported() {
@@ -47,9 +49,22 @@ class WatchConnectivityManager: NSObject, ObservableObject, WCSessionDelegate {
         }
     }
 
-    func sendMessageToPhone() {
+    
+    /// TODO: Change these to enums instead of just pure strings
+    func sendStopalarmMessageToPhone(String action: String = "stopAlarm") {
         if WCSession.default.isReachable {
-            let message = ["action": "buttonPressed"]
+            let message = ["action": action]
+            WCSession.default.sendMessage(message, replyHandler: nil) { error in
+                print("Failed to send message: \(error.localizedDescription)")
+            }
+        } else {
+            print("Phone is not reachable")
+        }
+    }
+    
+    func sendMessageToPhone(String action: String = "buttonPressed") {
+        if WCSession.default.isReachable {
+            let message = ["action": action]
             WCSession.default.sendMessage(message, replyHandler: nil) { error in
                 print("Failed to send message: \(error.localizedDescription)")
             }
@@ -60,7 +75,7 @@ class WatchConnectivityManager: NSObject, ObservableObject, WCSessionDelegate {
 }
 
 struct ContentView2: View {
-    @EnvironmentObject var connectivityManager: WatchConnectivityManager
+    @EnvironmentObject var connectivityManager: WatchToPhoneConnectivityManager
     @State public var titleMessage: String = "Hello"
     
     var body: some View {

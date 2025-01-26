@@ -37,7 +37,7 @@ class AlarmManager {
                 print("Alarm scheduled for \(date)")
                 DispatchQueue.main.asyncAfter(deadline: .now() + 5) { /// for testing, change deadling to the actual one
                                   self.triggerVibration()
-                                    ConnectivityManager.shared.sendAlarmMessageToWatch()
+                                    PhoneToWatchConnectivityManager.shared.sendAlarmMessageToWatch()
                               }
             }
         }

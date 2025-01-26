@@ -4,7 +4,7 @@ import WatchConnectivity
 
 @main
 struct PhoneApp: App {
-    @StateObject private var connectivityManager = ConnectivityManager()
+    @StateObject private var connectivityManager = PhoneToWatchConnectivityManager()
 
     var body: some Scene {
         WindowGroup {
@@ -14,8 +14,8 @@ struct PhoneApp: App {
     }
 }
 
-class ConnectivityManager: NSObject, ObservableObject, WCSessionDelegate {
-    static let shared = ConnectivityManager()
+class PhoneToWatchConnectivityManager: NSObject, ObservableObject, WCSessionDelegate {
+    static let shared = PhoneToWatchConnectivityManager()
 
     override init() {
         super.init()
@@ -31,6 +31,13 @@ class ConnectivityManager: NSObject, ObservableObject, WCSessionDelegate {
                     ContentView().labelText = "Some new text!"
                   }
         }
+        
+        if let action = message["action"] as? String, action == "stopAlarm" {
+            print("Message received: heart rate reached, stop the alarm!!")
+            DispatchQueue.main.async {
+                    ContentView().labelText = "Good shit! Stopping alarm..."
+                  }
+        }
     }
     
     func sendAlarmMessageToWatch() {
@@ -44,7 +51,6 @@ class ConnectivityManager: NSObject, ObservableObject, WCSessionDelegate {
                 print("Failed to send message: \(error.localizedDescription)")
             }
         }
-        
     }
 
     func session(
@@ -64,7 +70,7 @@ class ConnectivityManager: NSObject, ObservableObject, WCSessionDelegate {
 }
 
 struct ContentView: View {
-    @EnvironmentObject var connectivityManager: ConnectivityManager
+    @EnvironmentObject var connectivityManager: PhoneToWatchConnectivityManager
     @State public var labelText = "[Message from watch]"
     @State private var selectedTime = Date()
     @State private var isAlarmSet = false
@@ -139,5 +145,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
-        .environmentObject(ConnectivityManager.shared)
+        .environmentObject(PhoneToWatchConnectivityManager.shared)
 }

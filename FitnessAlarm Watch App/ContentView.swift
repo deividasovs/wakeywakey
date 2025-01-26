@@ -126,8 +126,11 @@ class HeartRateManager: ObservableObject {
             self.heartRate = Int(averageHeartRate)
 
             // Stop the alarm automatically if the heart rate reaches 150 bpm
+            
+            // TODO: Set to specific bpm based on user settings
             if self.heartRate >= 150 && self.alarmActive {
                 self.stopHeartRateMonitoring()
+                WatchToPhoneConnectivityManager.shared.sendStopalarmMessageToPhone()
                 print("Alarm stopped. Heart rate threshold reached.")
             }
         }
